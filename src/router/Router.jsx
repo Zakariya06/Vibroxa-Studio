@@ -3,6 +3,7 @@ import Home from "../screens/home";
 import { PAGE_ROUTE } from "./routes";
 import AboutUs from "../screens/aboutUs";
 import Layout from "../layout/Layout";
+import Services from "../screens/services";
 
 export const Router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const Router = createBrowserRouter([
       {
         path: PAGE_ROUTE.ABOUT_US,
         element: <AboutUs />,
+      },
+      {
+        path: `${PAGE_ROUTE.SERVICES}/:id`,
+        element: <Services />,
       },
     ],
   },

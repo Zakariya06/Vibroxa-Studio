@@ -19,7 +19,7 @@ import {
 
 const GetInTouchSection = () => {
   return (
-    <section className="GetInTouchSection constantSpacing">
+    <section className="GetInTouchSection constantSpacing" id="contact">
       <div className="container">
         <SectionHeader
           title="Get In Touch"

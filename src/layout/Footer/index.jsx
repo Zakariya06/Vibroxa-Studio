@@ -1,6 +1,9 @@
 import logo from "@/assets/brandLogo.png";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { PAGE_ROUTE } from "../../router/routes";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -31,63 +34,94 @@ const Footer = () => {
           </div>
 
           {/* Services Section */}
-          <div className="col-md-2 col-lg-3   ">
+          <div className="col-md-2 col-lg-3">
             <div className="footerMenu">
               <h5 className="mdHeading">Services</h5>
-              <a href="#" className="footerLink">
+              <Link
+                to={`${PAGE_ROUTE.SERVICES}/WebDevelopment`}
+                className="footerLink"
+              >
                 Web Development
-              </a>
-              <a href="#" className="footerLink">
+              </Link>
+              <Link
+                to={`${PAGE_ROUTE.SERVICES}/AppDevelopment`}
+                className="footerLink"
+              >
                 App Development
-              </a>
-              <a href="#" className="footerLink">
+              </Link>
+              <Link
+                to={`${PAGE_ROUTE.SERVICES}/GraphicDesign`}
+                className="footerLink"
+              >
                 Graphic Design
-              </a>
-              <a href="#" className="footerLink">
+              </Link>
+              <Link
+                to={`${PAGE_ROUTE.SERVICES}/VideoEditing`}
+                className="footerLink"
+              >
                 Video Editing
-              </a>
-              <a href="#" className="footerLink">
+              </Link>
+              <Link
+                to={`${PAGE_ROUTE.SERVICES}/DigitalMarketing`}
+                className="footerLink"
+              >
                 Digital Marketing
-              </a>
+              </Link>
+              <Link
+                to={`${PAGE_ROUTE.SERVICES}/BusinessDevelopment`}
+                className="footerLink"
+              >
+                Business Development
+              </Link>
             </div>
           </div>
 
           {/* Company Section */}
-          <div className="col-md-3 col-lg-3   ">
+          <div className="col-md-3 col-lg-3">
             <div className="footerMenu">
               <h5 className="mdHeading">Company</h5>
-              <a href="#" className="footerLink">
+
+              <Link to={PAGE_ROUTE.ABOUT_US} className="footerLink">
                 About Us
-              </a>
-              <a href="#" className="footerLink">
+              </Link>
+              <HashLink to="/#Portfolio" className="footerLink">
                 Portfolio
-              </a>
-              <a href="#" className="footerLink">
+              </HashLink>
+              <HashLink to={"/#Testimonials"} className="footerLink">
                 Testimonials
-              </a>
-              <a href="#" className="footerLink">
+              </HashLink>
+              <HashLink to={"/#contact"} className="footerLink">
                 Careers
-              </a>
-              <a href="#" className="footerLink">
+              </HashLink>
+              <Link to={PAGE_ROUTE.BLOG} className="footerLink">
                 Blog
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* Contact Section */}
-          <div className="col-md-4 col-lg-3   ">
-            <div className="footerMenu"></div>
-            <h5 className="mdHeading">Contact</h5>
-            <a href="#" className="footerLink">
-              <MapPin className="footerIcon" />
-              Lahore, Pakistan
-            </a>
-            <a href="#" className="footerLink">
-              <Mail className="footerIcon" /> vibroxastudio@gmail.com
-            </a>
-            <a href="#" className="footerLink">
-              <Phone className="footerIcon" /> +92 349 2374801
-            </a>
+          <div className="col-md-4 col-lg-3">
+            <div className="footerMenu">
+              <h5 className="mdHeading">Contact</h5>
+
+              <a
+                href="https://maps.google.com/?q=Lahore,+Pakistan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footerLink"
+              >
+                <MapPin className="footerIcon" />
+                Lahore, Pakistan
+              </a>
+
+              <a href="mailto:vibroxastudio@gmail.com" className="footerLink">
+                <Mail className="footerIcon" /> vibroxastudio@gmail.com
+              </a>
+
+              <a href="tel:+923492374801" className="footerLink">
+                <Phone className="footerIcon" /> +92 349 2374801
+              </a>
+            </div>
           </div>
         </div>
 

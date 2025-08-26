@@ -4,6 +4,7 @@ import { PAGE_ROUTE } from "../../router/routes";
 import { NavLink } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [theme, setTheme] = useState(() => {
@@ -55,33 +56,51 @@ const Header = () => {
               onMouseLeave={() => setShow(false)}
               onClick={() => setShow((prev) => !prev)}
             >
-              <NavDropdown.Item as={NavLink} to="/services">
+              <NavDropdown.Item
+                as={NavLink}
+                to={`${PAGE_ROUTE.SERVICES}/WebDevelopment`}
+              >
                 Web Development
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/another-action">
+              <NavDropdown.Item
+                as={NavLink}
+                to={`${PAGE_ROUTE.SERVICES}/AppDevelopment`}
+              >
                 App Development
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/something">
+              <NavDropdown.Item
+                as={NavLink}
+                to={`${PAGE_ROUTE.SERVICES}/GraphicDesign`}
+              >
                 Graphic Design
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/digital-marketing">
-                Digital Marketing
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/video-editing">
+              <NavDropdown.Item
+                as={NavLink}
+                to={`${PAGE_ROUTE.SERVICES}/VideoEditing`}
+              >
                 Video Editing
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/business-development">
+              <NavDropdown.Item
+                as={NavLink}
+                to={`${PAGE_ROUTE.SERVICES}/DigitalMarketing`}
+              >
+                Digital Marketing
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={NavLink}
+                to={`${PAGE_ROUTE.SERVICES}/BusinessDevelopment`}
+              >
                 Business Development
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link as={NavLink} to={PAGE_ROUTE.HOME}>
+            <Nav.Link as={HashLink} to={"/#Portfolio"}>
               Portfolio
             </Nav.Link>
-            <Nav.Link as={NavLink} to={PAGE_ROUTE.HOME}>
+            <Nav.Link as={HashLink} to={"/#Testimonials"}>
               Testimonials
             </Nav.Link>
-            <Nav.Link as={NavLink} to={PAGE_ROUTE.HOME}>
+            <Nav.Link as={HashLink} to={"/#contact"}>
               Contact
             </Nav.Link>
             <button

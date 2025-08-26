@@ -33,7 +33,7 @@ const PortfolioData = [
 
 const OurPortfolioSection = () => {
   return (
-    <section className="OurPortfolioSection constantSpacing">
+    <section className="OurPortfolioSection constantSpacing" id="Portfolio">
       <div className="container">
         <SectionHeader
           title="Our Portfolio"

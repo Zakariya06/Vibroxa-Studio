@@ -34,7 +34,7 @@ const clientData = [
 
 const ClientSection = () => {
   return (
-    <section className="ClientSection constantSpacing">
+    <section className="ClientSection constantSpacing" id="Testimonials">
       <div className="container">
         <SectionHeader
           title="Client Testimonials"

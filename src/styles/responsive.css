@@ -1,0 +1,183 @@
+/* media */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1550px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar.customHeader .navbar-nav {
+    align-items: start;
+    gap: 0.6rem;
+  }
+  .logoHeading {
+    font-size: 0.9rem;
+  }
+  .brandLogoImage {
+    width: 2rem;
+  }
+  .toggleTheme {
+    width: 30px;
+    height: 30px;
+  }
+  .toggleIcon {
+    width: 1rem;
+    height: auto;
+  }
+
+  /* hero section */
+  .HeroSection {
+    padding: 4rem 0;
+  }
+  .lgHeading {
+    font-size: 2.4rem;
+  }
+  .mainText {
+    font-size: 1rem;
+  }
+  .mainPageButton {
+    height: 2.3rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.84rem;
+  }
+  .mdHeading {
+    font-size: 18px;
+  }
+  .SectionHeader {
+    gap: 0.4rem;
+    margin-bottom: 3rem;
+  }
+  .breakLink {
+    width: 4rem;
+  }
+  .SectionHeader .lgHeading {
+    font-size: 25px;
+  }
+  .SectionHeader .mainText {
+    font-size: 0.9rem;
+  }
+}
+
+/* media */
+@media screen and (max-width: 554px) {
+  /* hero section */
+  .HeroSection {
+    padding: 3rem 0;
+  }
+  .lgHeading {
+    font-size: 1.4rem;
+  }
+  .mainText {
+    font-size: 0.84rem;
+  }
+  .mainPageButton {
+    height: 2rem;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+  .mdHeading {
+    font-size: 18px;
+  }
+  .listText {
+    font-size: 0.8em;
+  }
+  .SectionHeader .lgHeading {
+    font-size: 19px;
+  }
+  .SectionHeader .mainText {
+    font-size: 0.78rem;
+  }
+  .serviceCard .mdHeading {
+    font-size: 1rem;
+  }
+  .serviceCard .mainText {
+    font-size: 0.8rem;
+  }
+  .portfolioCard .cardImage {
+    width: 100%;
+    height: 180px;
+  }
+  .skillButton {
+    padding: 0.3rem 0.8rem;
+    font-size: 10px;
+  }
+  .clientDetails .mdHeading {
+    font-size: 0.9rem;
+  }
+  .clientDetails .mainText {
+    font-size: 0.76rem;
+  }
+  .clientAvatar {
+    width: 34px;
+    height: 34px;
+  }
+  .GetInTouchSection {
+    background: var(--primaryColor);
+  }
+  .GetInTouchHelpBox {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    background-color: var(--themeColor);
+  }
+  .contactAlert .InfoIcon {
+    width: 0.9rem;
+    height: auto;
+  }
+
+  .contactAlert .mainText {
+    font-size: 0.7rem;
+    flex: 1;
+  }
+
+  .smHeading {
+    font-size: 0.9rem;
+  }
+
+  /* contactInfo */
+  .contactInfo .mainText {
+    font-size: 0.8rem;
+  }
+  /* socialLink */
+  .socialLink {
+    font-size: 1rem;
+  }
+  .footerSection .mainText {
+    color: var(--themeColor);
+    font-size: 0.76rem;
+  }
+
+  .footerSection .mdHeading {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  .footerLink {
+    font-size: 0.75rem;
+  }
+  .footerIcon {
+    width: 0.9rem;
+  }
+  /* footerCopyWriteContent */
+  .footerCopyWriteContent {
+    margin-top: 1.3rem;
+    padding-top: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .copyWriteText {
+    font-size: 0.75rem;
+  }
+  .navbar.customHeader .dropdown-item {
+    font-size: 0.8rem;
+  }
+  .heroContent .mdHeading {
+    font-size: 16px;
+  }
+}
